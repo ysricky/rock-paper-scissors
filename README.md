@@ -7,4 +7,4 @@ Future update will be:
 - DOM implementation
 - add user interface (CSS styling)
 
-Thank you!
+Thank you! 😎
