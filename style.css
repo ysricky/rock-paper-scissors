@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-areas:
+    "title title title"
+    ". main ."
+    "footer footer footer";
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  grid-area: main;
+  border-radius: 15px;
+}
+
+.playerArea,
+.cpuArea {
+  font-size: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.versus {
+  font-size: 2em;
+}
+
+.btn,
+.btn-cpu {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn-cpu {
+  background-color: salmon;
+}
+
+.btn:hover {
+  background-color: lime;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 5px;
+  }
+}
